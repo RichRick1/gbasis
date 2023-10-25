@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=c5ced968eda925caa686" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=c5ced968eda925caa686" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=c5ced968eda925caa686" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=c5ced968eda925caa686" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=c5ced968eda925caa686"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'installation';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="gbasis package" href="_autosummary/gbasis.html" />
+    <link rel="next" title="Getting started" href="tutorial.html" />
     <link rel="prev" title="Welcome to GBasis’s Documentation!" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -146,13 +146,14 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
+  
     
     
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ayers Lab - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Ayers Lab - Home"/>`);</script>
   
   
 </a></div>
@@ -169,6 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">User Documentation</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Getting started</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">API</span></p>
 <ul class="nav bd-sidenav">
@@ -444,11 +446,11 @@ document.write(`
 </b>
 <p>We are preparing a 1.0 release. Until then, these instructions for installing a stable release will not work yet. If you enjoy living on the edge, try the development release as explained in the “Latest git revision” section below.</p>
 </div>
-<p>The following dependencies are required to run DiverseSelector properly,</p>
+<p>The following dependencies are required to run GBasis properly,</p>
 <ul class="simple">
 <li><p>Python &gt;= 3.6: <a class="reference external" href="http://www.python.org/">http://www.python.org/</a></p></li>
-<li><p>Numpy: <a class="reference external" href="http://www.numpy.org/">http://www.numpy.org/</a></p></li>
-<li><p>SciPy &gt;= 1.0: <a class="reference external" href="http://www.scipy.org/">http://www.scipy.org/</a></p></li>
+<li><p>Numpy &gt;= 1.10: <a class="reference external" href="http://www.numpy.org/">http://www.numpy.org/</a></p></li>
+<li><p>SciPy &gt;= 1.0, &lt;1=.10.1 : <a class="reference external" href="http://www.scipy.org/">http://www.scipy.org/</a></p></li>
 <li><p>PyTest &gt;= 5.3.4: <a class="reference external" href="https://docs.pytest.org/">https://docs.pytest.org/</a></p></li>
 <li><p>PyTest-Cov &gt;= 2.8.0: <a class="reference external" href="https://pypi.org/project/pytest-cov">https://pypi.org/project/pytest-cov</a></p></li>
 </ul>
@@ -457,7 +459,7 @@ document.write(`
 <section id="installation-with-ana-or-miniconda">
 <h2>Installation with Ana- or Miniconda:<a class="headerlink" href="#installation-with-ana-or-miniconda" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>To install DiverseSelector using the conda package management system, install <a class="reference external" href="https://conda.io/miniconda.html">miniconda</a> or <a class="reference external" href="https://www.anaconda.com/download">anaconda</a> first, and then:</p></li>
+<li><p>To install GBasis using the conda package management system, install <a class="reference external" href="https://conda.io/miniconda.html">miniconda</a> or <a class="reference external" href="https://www.anaconda.com/download">anaconda</a> first, and then:</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Activate your main conda environment if it is not loaded in your .bashrc.</span>
 <span class="c1"># E.g. run the following if you have miniconda installed in e.g. ~/miniconda3</span>
@@ -473,9 +475,9 @@ document.write(`
 <span class="c1"># Unstable releases</span>
 <span class="c1"># (Only do this if you understand the implications.)</span>
 <span class="c1"># Install the testing release. (beta)</span>
-<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">theochem</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">test</span> <span class="n">qc</span><span class="o">-</span><span class="n">selector</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">theochem</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">test</span> <span class="n">gbasis</span>
 <span class="c1"># Install the development release. (alpha)</span>
-<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">theochem</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">dev</span> <span class="n">qc</span><span class="o">-</span><span class="n">selector</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">theochem</span><span class="o">/</span><span class="n">label</span><span class="o">/</span><span class="n">dev</span> <span class="n">gbasis</span>
 </pre></div>
 </div>
 </section>
@@ -492,26 +494,26 @@ document.write(`
 <span class="n">source</span> <span class="o">~/</span><span class="n">horton3</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
 
 <span class="c1"># Install the stable release in the venv horton3.</span>
-<span class="n">pip3</span> <span class="n">install</span> <span class="n">qc</span><span class="o">-</span><span class="n">selector</span>
-<span class="c1"># alternative: python3 -m pip install qc-selector</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">gbasis</span>
+<span class="c1"># alternative: python3 -m pip install gbasis</span>
 
 <span class="c1"># For developers, install a pre-release (alpha or beta).</span>
 <span class="c1"># (Only do this if you understand the implications.)</span>
-<span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">pre</span> <span class="n">qc</span><span class="o">-</span><span class="n">selector</span>
-<span class="c1"># alternative: python3 -m pip install --pre qc-selector</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">pre</span> <span class="n">gbasis</span>
+<span class="c1"># alternative: python3 -m pip install --pre gbasis</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>You can install into your <code class="docutils literal notranslate"><span class="pre">{$HOME}</span></code> directory without creating a virtual environment</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install the stable release in your home directory.</span>
-<span class="n">pip3</span> <span class="n">install</span> <span class="n">qc</span><span class="o">-</span><span class="n">selector</span> <span class="o">--</span><span class="n">user</span>
-<span class="c1"># alternative: python3 -m pip install qc-selector --user</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">gbasis</span> <span class="o">--</span><span class="n">user</span>
+<span class="c1"># alternative: python3 -m pip install gbasis --user</span>
 
 <span class="c1"># For developers, install a pre-release (alpha or beta).</span>
 <span class="c1"># (Only do this if you understand the implications.)</span>
-<span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">pre</span> <span class="n">qc</span><span class="o">-</span><span class="n">selector</span> <span class="o">--</span><span class="n">user</span>
-<span class="c1"># alternative: python3 -m pip install --pre qc-selector --user</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">pre</span> <span class="n">gbasis</span> <span class="o">--</span><span class="n">user</span>
+<span class="c1"># alternative: python3 -m pip install --pre gbasis --user</span>
 </pre></div>
 </div>
 <p>This is by far the simplest method, ideal to get started, but you have only one home directory. If the installation breaks due to some experimentation, it is harder to make a clean start in comparison to the other options.</p>
@@ -521,7 +523,7 @@ Python modules.</p>
 </section>
 <section id="latest-git-revision">
 <h2>Latest git revision<a class="headerlink" href="#latest-git-revision" title="Permalink to this heading">#</a></h2>
-<p>This section shows how one can install the latest revision of DiverseSelector from the git repository. This kind of installation comes with some risks (sudden API changes, bugs, …) and so be prepared to accept them when using the following installation instructions.</p>
+<p>This section shows how one can install the latest revision of GBasis from the git repository. This kind of installation comes with some risks (sudden API changes, bugs, …) and so be prepared to accept them when using the following installation instructions.</p>
 <p>There are two installation methods:</p>
 <ol class="arabic simple">
 <li><p><strong>Quick and dirty.</strong> Of this method, there are four variants, depending on the correctness of your <code class="docutils literal notranslate"><span class="pre">PATH</span></code> variable and the presence of a virtual or conda environment. These different scenarios are explained in more detail in the previous section.</p></li>
@@ -611,11 +613,11 @@ Python modules.</p>
       </div>
     </a>
     <a class="right-next"
-       href="_autosummary/gbasis.html"
+       href="tutorial.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">gbasis package</p>
+        <p class="prev-next-title">Getting started</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -686,8 +688,8 @@ By The QC-Dev Community with the support of Digital Research Alliance of Canada 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=c5ced968eda925caa686"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=c5ced968eda925caa686"></script>
 
   <footer class="bd-footer">
   </footer>
