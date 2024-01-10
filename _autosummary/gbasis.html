@@ -394,6 +394,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.contractions">gbasis.contractions module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.parsers">gbasis.parsers module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.spherical">gbasis.spherical module</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.utils">gbasis.utils module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.wrappers">gbasis.wrappers module</a></li>
 </ul>
             </nav>
@@ -1957,6 +1958,22 @@ If <cite>mag</cite> has a greater magnitude than <cite>angmom</cite>.</p>
 </dd></dl>
 
 </section>
+<section id="module-gbasis.utils">
+<span id="gbasis-utils-module"></span><h2>gbasis.utils module<a class="headerlink" href="#module-gbasis.utils" title="Permalink to this heading">#</a></h2>
+<p>Utility functions for gbasis.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="gbasis.utils.factorial2">
+<span class="sig-prename descclassname"><span class="pre">gbasis.utils.</span></span><span class="sig-name descname"><span class="pre">factorial2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.utils.factorial2" title="Permalink to this definition">#</a></dt>
+<dd><p>Wrap scipy.special.factorial2 to return 1.0 when the input is not positive.</p>
+<p>This is a temporary workaround to address issue #129, while we wait for Scipy’s update.
+To learn more, see <a class="github reference external" href="https://github.com/scipy/scipy/issues/18409">scipy/scipy#18409</a>.</p>
+<dl class="simple">
+<dt>n<span class="classifier">int or np.ndarray</span></dt><dd><p>Values to calculate n!! for. If n &lt;= 0, the return value is 1.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <section id="module-gbasis.wrappers">
 <span id="gbasis-wrappers-module"></span><h2>gbasis.wrappers module<a class="headerlink" href="#module-gbasis.wrappers" title="Permalink to this heading">#</a></h2>
 <p>Module for interfacing to other quantum chemistry packages.</p>
@@ -2087,6 +2104,7 @@ at <a class="github reference external" href="https://github.com/theochem/gbasis
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.contractions">gbasis.contractions module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.parsers">gbasis.parsers module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.spherical">gbasis.spherical module</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.utils">gbasis.utils module</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-gbasis.wrappers">gbasis.wrappers module</a></li>
 </ul>
   </nav></div>

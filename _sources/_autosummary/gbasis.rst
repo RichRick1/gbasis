@@ -82,6 +82,14 @@ gbasis.spherical module
    :undoc-members:
    :show-inheritance:
 
+gbasis.utils module
+-------------------
+
+.. automodule:: gbasis.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 gbasis.wrappers module
 ----------------------
 
