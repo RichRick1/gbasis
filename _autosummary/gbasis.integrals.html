@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -78,7 +78,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -121,12 +121,18 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -141,6 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -334,6 +341,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -343,6 +351,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -393,7 +402,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="module-gbasis.integrals">
 <span id="gbasis-integrals-package"></span><h1>gbasis.integrals package<a class="headerlink" href="#module-gbasis.integrals" title="Permalink to this heading">#</a></h1>
@@ -416,14 +425,11 @@ document.write(`
 Property of <cite>AngularMomentumIntegral</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(contractions_one, contractions_two) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2, 3)</p>
-<blockquote>
-<div><p>Return the integral over the angular momentum operator associated with a
+<dt>construct_array_contraction(contractions_one, contractions_two) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2, 3)</strong></p>
+<p>Return the integral over the angular momentum operator associated with a
 <cite>GeneralizedContractionShell</cite> instance.
 <span class="math notranslate nohighlight">\(M_1\)</span> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
@@ -433,8 +439,7 @@ associated with the first index.
 momentum) associated with the second index.
 <span class="math notranslate nohighlight">\(L_cart_2\)</span> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self)<span class="classifier">np.ndarray(K_cart, K_cart, 3)</span></dt><dd><p>Return the integral over the angular momentum operator associated with Cartesian Gaussians.
 <span class="math notranslate nohighlight">\(K_cart\)</span> is the total number of Cartesian contractions within the instance.</p>
 </dd>
@@ -538,14 +543,11 @@ Gaussian (or a linear combination of a set of Gaussians).</p>
 Property of <cite>ElectronRepulsionIntegral</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(self, cont1, cont2, cont3, cont4) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2, M_3, L_cart_3, M_4, L_cart_4)</p>
-<blockquote>
-<div><p>Return the electron-electron repulsion integrals associated with a
+<dt>construct_array_contraction(self, cont1, cont2, cont3, cont4) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2, M_3, L_cart_3, M_4, L_cart_4)</strong></p>
+<p>Return the electron-electron repulsion integrals associated with a
 <cite>GeneralizedContractionShell</cite> instances.
 <span class="math notranslate nohighlight">\(M_1\)</span> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
@@ -564,8 +566,7 @@ momentum) associated with the fourth index.
 <span class="math notranslate nohighlight">\(L_cart_4\)</span> is the number of Cartesian contractions for the given angular momentum
 associated with the fourth index.
 Note that the integrals are in Chemists’ notation.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self)<span class="classifier">np.ndarray(K_cart, K_cart, K_cart, K_cart)</span></dt><dd><p>Return the electron-electron repulsion integrals associated with Cartesian Gaussians.
 <span class="math notranslate nohighlight">\(K_cart\)</span> is the total number of Cartesian contractions within the instance.
 Note that the integrals are in Chemists’ notation.</p>
@@ -580,15 +581,13 @@ the given coordinate system.
 <span class="math notranslate nohighlight">\(K_cont\)</span> is the total number of contractions within the given basis set.
 Note that the integrals are in Chemists’ notation.</p>
 </dd>
-</dl>
-<p>construct_array_lincomb(self, transform, coord_type) :
-np.ndarray(K_orbs, K_orbs, K_orbs, K_orbs)</p>
-<blockquote>
-<div><p>Return the electron-electron repulsion integrals associated with linear combinations of
+<dt>construct_array_lincomb(self, transform, coord_type) :</dt><dd><p><strong>np.ndarray(K_orbs, K_orbs, K_orbs, K_orbs)</strong></p>
+<p>Return the electron-electron repulsion integrals associated with linear combinations of
 contractions in the given coordinate system.
 <span class="math notranslate nohighlight">\(K_orbs\)</span> is the number of basis functions produced after the linear combinations.
 Note that the integrals are in Chemists’ notation.</p>
-</div></blockquote>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="gbasis.integrals.electron_repulsion.ElectronRepulsionIntegral.boys_func">
 <span class="sig-name descname"><span class="pre">boys_func</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">weighted_dist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.integrals.electron_repulsion.ElectronRepulsionIntegral.boys_func" title="Permalink to this definition">#</a></dt>
@@ -600,11 +599,9 @@ confluent hypergeometric function, as derived in Helgaker (eq. 9.8.39).</p>
 Same as m in eq. 23, Aldrichs, R. Phys. Chem. Chem. Phys., 2006, 8, 3072-3077.
 <cite>M</cite> is the number of orders that will be evaluated.</p>
 </dd>
-<dt>weighted_dist<span class="classifier">np.ndarray(1, N, K_b, K_a)</span></dt><dd><p>Weighted interatomic distances.
-.. math:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">frac</span><span class="p">{</span>\<span class="n">alpha_i</span> \<span class="n">beta_j</span><span class="p">}{</span>\<span class="n">alpha_i</span> <span class="o">+</span> \<span class="n">beta_j</span><span class="p">}</span> <span class="o">*</span> <span class="o">||</span><span class="n">R_</span><span class="p">{</span><span class="n">PC</span><span class="p">}</span><span class="o">||^</span><span class="mi">2</span>
-</pre></div>
-</div>
+<dt>weighted_dist<span class="classifier">np.ndarray(1, N, K_b, K_a)</span></dt><dd><p>Weighted interatomic distances.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\alpha_i \beta_j}{\alpha_i + \beta_j} * ||R_{PC}||^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha_i\)</span> is the exponent of the ith primitive on the left side and the
 <span class="math notranslate nohighlight">\(\beta_j\)</span> is the exponent of the jth primitive on the right side.
 <cite>N</cite> is the number of point charges.
@@ -751,14 +748,11 @@ set, where <span class="math notranslate nohighlight">\(K\)</span> is the total 
 Property of <cite>KineticEnergyIntegral</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(contractions_one, contractions_two) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2)</p>
-<blockquote>
-<div><p>Return the kinetic energy integral associated with a <cite>GeneralizedContractionShell</cite>
+<dt>construct_array_contraction(contractions_one, contractions_two) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2)</strong></p>
+<p>Return the kinetic energy integral associated with a <cite>GeneralizedContractionShell</cite>
 instance.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
@@ -768,8 +762,7 @@ associated with the first index.
 momentum) associated with the second index.
 <cite>L_cart_2</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self)<span class="classifier">np.ndarray(K_cart, K_cart)</span></dt><dd><p>Return the kinetic energy integral associated with Cartesian Gaussians.
 <cite>K_cart</cite> is the total number of Cartesian contractions within the instance.</p>
 </dd>
@@ -1009,14 +1002,11 @@ order.</p>
 Property of <cite>MomentumIntegral</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(contractions_one, contractions_two) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2, 3)</p>
-<blockquote>
-<div><p>Return the integral over the momentum operator associated with a
+<dt>construct_array_contraction(contractions_one, contractions_two) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2, 3)</strong></p>
+<p>Return the integral over the momentum operator associated with a
 <cite>GeneralizedContractionShell</cite> instance.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
@@ -1026,8 +1016,7 @@ associated with the first index.
 momentum) associated with the second index.
 <cite>L_cart_2</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self)<span class="classifier">np.ndarray(K_cart, K_cart, 3)</span></dt><dd><p>Return the integral over the momentum operator associated with Cartesian Gaussians.
 <cite>K_cart</cite> is the total number of Cartesian contractions within the instance.</p>
 </dd>
@@ -1165,14 +1154,11 @@ Gaussians. <cite>K_cart</cite> is the total number of Cartesian contractions wit
 Property of <cite>Overlap</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(contractions_one, contractions_two) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2)</p>
-<blockquote>
-<div><p>Return the overlap associated with a <cite>GeneralizedContractionShell</cite> instance.
+<dt>construct_array_contraction(contractions_one, contractions_two) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2)</strong></p>
+<p>Return the overlap associated with a <cite>GeneralizedContractionShell</cite> instance.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
 <cite>L_cart_1</cite> is the number of Cartesian contractions for the given angular momentum
@@ -1181,8 +1167,7 @@ associated with the first index.
 momentum) associated with the second index.
 <cite>L_cart_2</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self)<span class="classifier">np.ndarray(K_cart, K_cart)</span></dt><dd><p>Return the overlap integrals associated with Cartesian Gaussians.
 <cite>K_cart</cite> is the total number of Cartesian contractions within the instance.</p>
 </dd>
@@ -1282,14 +1267,11 @@ Property of <cite>OverlapAsymmetric</cite>.</p>
 Property of <cite>OverlapAsymmetric</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions_one, contractions_two)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(contractions_one, contractions_two) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2)</p>
-<blockquote>
-<div><p>Return the overlap associated with the two <cite>GeneralizedContractionShell</cite> instances.
+<dt>construct_array_contraction(contractions_one, contractions_two) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2)</strong>
+Return the overlap associated with the two <cite>GeneralizedContractionShell</cite> instances.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
 <cite>L_cart_1</cite> is the number of Cartesian contractions for the given angular momentum
@@ -1298,8 +1280,7 @@ associated with the first index.
 momentum) associated with the second index.
 <cite>L_cart_2</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self)<span class="classifier">np.ndarray(K_cart_1, K_cart_2)</span></dt><dd><p>Return the overlap integrals between Cartesian Gaussians of the two basis sets.
 <cite>K_cart_1</cite> is the total number of Cartesian contractions within <cite>contractions_one</cite>.
 <cite>K_cart_2</cite> is the total number of Cartesian contractions within <cite>contractions_two</cite>.</p>
@@ -1309,25 +1290,21 @@ two basis sets.
 <cite>K_sph_1</cite> is the total number of spherical contractions within <cite>contractions_one</cite>.
 <cite>K_sph_2</cite> is the total number of spherical contractions within <cite>contractions_two</cite>.</p>
 </dd>
-</dl>
-<p>construct_array_mix(self, coord_types_one, coord_types_two) :
-np.ndarray(K_cont_1, K_cont_2)</p>
-<blockquote>
-<div><p>Return the overlap integrals associated with the contractions in the given coordinate
+<dt>construct_array_mix(self, coord_types_one, coord_types_two) :</dt><dd><p><strong>np.ndarray(K_cont_1, K_cont_2)</strong></p>
+<p>Return the overlap integrals associated with the contractions in the given coordinate
 systems of the two basis sets.
 <cite>K_cont_1</cite> is the total number of contractions within the given basis set.
 <cite>K_cont_2</cite> is the total number of contractions within the given basis set.</p>
-</div></blockquote>
-<p>construct_array_lincomb(self, transform_one, transform_two, coord_type_one, coord_type_two) :
-np.ndarray(K_orbs_1, K_orbs_2)</p>
-<blockquote>
-<div><p>Return the overlap integrals associated with the linear combinations of contractions of the
+</dd>
+<dt>construct_array_lincomb(self, transform_one, transform_two, coord_type_one, coord_type_two) :</dt><dd><p><strong>np.ndarray(K_orbs_1, K_orbs_2)</strong></p>
+<p>Return the overlap integrals associated with the linear combinations of contractions of the
 two basis sets.
 <cite>K_orbs_1</cite> is the number of basis functions produced after the linear combinations of
 the spherical contractions associated with <cite>contractions_one</cite>.
 <cite>K_orbs_2</cite> is the number of basis functions produced after the linear combinations of
 the spherical contractions associated with <cite>contractions_two</cite>.</p>
-</div></blockquote>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="gbasis.integrals.overlap_asymm.OverlapAsymmetric.construct_array_contraction">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">construct_array_contraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contractions_one</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contractions_two</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.integrals.overlap_asymm.OverlapAsymmetric.construct_array_contraction" title="Permalink to this definition">#</a></dt>
@@ -1420,11 +1397,9 @@ Dimensions 1 of the array correspond to the basis functions in <cite>basis_two</
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">gbasis.integrals.point_charge.</span></span><span class="sig-name descname"><span class="pre">PointChargeIntegral</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contractions</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.integrals.point_charge.PointChargeIntegral" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <a class="reference internal" href="gbasis.html#gbasis.base_two_symm.BaseTwoIndexSymmetric" title="gbasis.base_two_symm.BaseTwoIndexSymmetric"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTwoIndexSymmetric</span></code></a></p>
 <p>General class for calculating one-electron integrals for interaction with a point charge.</p>
-<p>One electron integrals are assumed to have the following form:
-.. math:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="nb">int</span> \<span class="n">phi_a</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">r</span><span class="p">})</span> \<span class="n">phi_b</span><span class="p">(</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">r</span><span class="p">})</span> <span class="n">g</span><span class="p">(</span><span class="o">|</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">r</span><span class="p">}</span> <span class="o">-</span> \<span class="n">mathbf</span><span class="p">{</span><span class="n">R</span><span class="p">}</span><span class="n">_C</span><span class="o">|</span><span class="p">,</span> <span class="n">Z</span><span class="p">)</span> <span class="n">d</span>\<span class="n">mathbf</span><span class="p">{</span><span class="n">r</span><span class="p">}</span>
-</pre></div>
-</div>
+<p>One electron integrals are assumed to have the following form:</p>
+<div class="math notranslate nohighlight">
+\[\int \phi_a(\mathbf{r}) \phi_b(\mathbf{r}) g(|\mathbf{r} - \mathbf{R}_C|, Z) d\mathbf{r}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\phi_a\)</span> is Gaussian contraction on the left, <span class="math notranslate nohighlight">\(\phi_b\)</span> is the Gaussian
 contraction on the right, <span class="math notranslate nohighlight">\(\mathbf{R}_C\)</span> is the position of the point charge, <span class="math notranslate nohighlight">\(Z\)</span> is
 the charge at the point charge, and <span class="math notranslate nohighlight">\(g(|\mathbf{r} - \mathbf{R}_C|, Z)\)</span> determines the
@@ -1436,17 +1411,14 @@ type of the one-electorn integral.</p>
 Property of <cite>PointChargeIntegral</cite>.</p>
 </dd>
 </dl>
-<dl>
+<dl class="simple">
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
 <dt>boys_func<span class="classifier">np.ndarray(np.ndarray(M, K_b, K_a))</span></dt><dd><p>Boys function used to evaluate the one-electron integral.
 <cite>M</cite> is the number of orders that will be evaluated.
 <cite>K_a</cite> and <cite>K_b</cite> are the number of primitives on the left and right side, respectively.</p>
 </dd>
-<dt>construct_array_contraction(self, contractions_one, contractions_two, points_coords,</dt><dd><blockquote>
-<div><p>points_charge)</p>
-</div></blockquote>
-<p>Return the point charge integrals for the given <cite>GeneralizedContractionShell</cite> instances.
+<dt>construct_array_contraction(self, contractions_one, contractions_two, points_coords, points_charge)</dt><dd><p>Return the point charge integrals for the given <cite>GeneralizedContractionShell</cite> instances.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
 <cite>L_cart_1</cite> is the number of Cartesian contractions for the given angular momentum
@@ -1482,11 +1454,9 @@ confluent hypergeometric function, as derived in Helgaker (eq. 9.8.39).</p>
 Same as m in eq. 23, Aldrichs, R. Phys. Chem. Chem. Phys., 2006, 8, 3072-3077.
 <cite>M</cite> is the number of orders that will be evaluated.</p>
 </dd>
-<dt>weighted_dist<span class="classifier">np.ndarray(1, N, K_b, K_a)</span></dt><dd><p>Weighted interatomic distances.
-.. math:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">frac</span><span class="p">{</span>\<span class="n">alpha_i</span> \<span class="n">beta_j</span><span class="p">}{</span>\<span class="n">alpha_i</span> <span class="o">+</span> \<span class="n">beta_j</span><span class="p">}</span> <span class="o">*</span> <span class="o">||</span><span class="n">R_</span><span class="p">{</span><span class="n">PC</span><span class="p">}</span><span class="o">||^</span><span class="mi">2</span>
-</pre></div>
-</div>
+<dt>weighted_dist<span class="classifier">np.ndarray(1, N, K_b, K_a)</span></dt><dd><p>Weighted interatomic distances.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\alpha_i \beta_j}{\alpha_i + \beta_j} * ||R_{PC}||^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha_i\)</span> is the exponent of the ith primitive on the left side and the
 <span class="math notranslate nohighlight">\(\beta_j\)</span> is the exponent of the jth primitive on the right side.
 <cite>N</cite> is the number of point charges.
@@ -1632,7 +1602,7 @@ evaluted at the given points.
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="gbasis.evals.html"
@@ -1651,6 +1621,7 @@ evaluted at the given points.
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1689,6 +1660,7 @@ By The QC-Dev Community with the support of Digital Research Alliance of Canada 
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022-2023.
@@ -1715,8 +1687,8 @@ By The QC-Dev Community with the support of Digital Research Alliance of Canada 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>

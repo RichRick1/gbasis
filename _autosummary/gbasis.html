@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,15 +19,15 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -79,7 +79,7 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
 
@@ -122,12 +122,18 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <header>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
   
+  </header>
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -142,6 +148,7 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -335,6 +342,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -344,6 +352,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -395,7 +404,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="module-gbasis">
 <span id="gbasis-package"></span><h1>gbasis package<a class="headerlink" href="#module-gbasis" title="Permalink to this heading">#</a></h1>
@@ -582,14 +591,11 @@ Gaussian (or a linear combination of a set of Gaussians).</p>
 Property of <cite>BaseFourIndexSymmetric</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(self, cont1, cont2, cont3, cont4, <a href="#id15"><span class="problematic" id="id16">**</span></a>kwargs) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2, M_3, L_cart_3, M_4, L_cart_4, …)</p>
-<blockquote>
-<div><p>Return the array associated with a <cite>GeneralizedContractionShell</cite> instances.
+<dt>construct_array_contraction(self, cont1, cont2, cont3, cont4, <a href="#id15"><span class="problematic" id="id16">**</span></a>kwargs) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2, M_3, L_cart_3, …)</strong></p>
+<p>Return the array associated with a <cite>GeneralizedContractionShell</cite> instances.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
 <cite>L_cart_1</cite> is the number of Cartesian contractions for the given angular momentum
@@ -606,29 +612,24 @@ associated with the third index.
 momentum) associated with the fourth index.
 <cite>L_cart_4</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the fourth index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self, <a href="#id17"><span class="problematic" id="id18">**</span></a>kwargs)<span class="classifier">np.ndarray(K_cart, K_cart, K_cart, K_cart, …)</span></dt><dd><p>Return the array associated with Cartesian Gaussians.
 <cite>K_cart</cite> is the total number of Cartesian contractions within the instance.</p>
 </dd>
 <dt>construct_array_spherical(self, <a href="#id19"><span class="problematic" id="id20">**</span></a>kwargs)<span class="classifier">np.ndarray(K_sph, K_sph, K_sph, K_sph, …)</span></dt><dd><p>Return the array associated with spherical Gaussians (atomic orbitals).
 <cite>K_sph</cite> is the total number of spherical contractions within the instance.</p>
 </dd>
-</dl>
-<p>construct_array_mix(self, coord_types, <a href="#id21"><span class="problematic" id="id22">**</span></a>kwargs) :
-np.ndarray(K_cont, K_cont, K_cont, K_cont, …)</p>
-<blockquote>
-<div><p>Return the array associated with all of the contraction in the given coordinate
+<dt>construct_array_mix(self, coord_types, <a href="#id21"><span class="problematic" id="id22">**</span></a>kwargs) :</dt><dd><p><strong>np.ndarray(K_cont, K_cont, K_cont, K_cont, …)</strong></p>
+<p>Return the array associated with all of the contraction in the given coordinate
 system.
 <cite>K_cont</cite> is the total number of contractions within the given basis set.</p>
-</div></blockquote>
-<p>construct_array_lincomb(self, transform, coord_type) :
-np.ndarray(K_orbs, K_orbs, K_orbs, K_orbs, …)</p>
-<blockquote>
-<div><p>Return the array associated with linear combinations of contractions in the given coordinate
+</dd>
+<dt>construct_array_lincomb(self, transform, coord_type) :</dt><dd><p><strong>np.ndarray(K_orbs, K_orbs, K_orbs, K_orbs, …)</strong></p>
+<p>Return the array associated with linear combinations of contractions in the given coordinate
 system.
 <cite>K_orbs</cite> is the number of basis functions produced after the linear combinations.</p>
-</div></blockquote>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="gbasis.base_four_symm.BaseFourIndexSymmetric.construct_array_cartesian">
 <span class="sig-name descname"><span class="pre">construct_array_cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.base_four_symm.BaseFourIndexSymmetric.construct_array_cartesian" title="Permalink to this definition">#</a></dt>
@@ -1029,18 +1030,13 @@ Property of <cite>BaseTwoIndexAsymmetric</cite>.</p>
 Property of <cite>BaseTwoIndexAsymmetric</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions_one, contractions_two)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(self, contractions_one, contractions_two, <a href="#id25"><span class="problematic" id="id26">**</span></a>kwargs) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2, …)</p>
-<blockquote>
-<div><blockquote>
-<div><p>Return the array associated with a <cite>GeneralizedContractionShell</cite> instance.</p>
-</div></blockquote>
-<dl class="simple">
-<dt><cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular</dt><dd><p>momentum) associated with the first index.
+<dt>construct_array_contraction(self, contractions_one, contractions_two, <a href="#id25"><span class="problematic" id="id26">**</span></a>kwargs) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2, …)</strong></p>
+<p>Return the array associated with a <cite>GeneralizedContractionShell</cite> instance.
+<cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
+momentum) associated with the first index.
 <cite>L_cart_1</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the first index.
 <cite>M_2</cite> is the number of segmented contractions with the same exponents (and angular
@@ -1048,9 +1044,6 @@ momentum) associated with the second index.
 <cite>L_cart_2</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
 </dd>
-</dl>
-</div></blockquote>
-<dl class="simple">
 <dt>construct_array_cartesian(self, <a href="#id27"><span class="problematic" id="id28">**</span></a>kwargs)<span class="classifier">np.ndarray(K_cart_1, K_cart_2, …)</span></dt><dd><p>Return the array associated with Cartesian Gaussians.
 <cite>K_cart_1</cite> is the total number of Cartesian contractions within <cite>contractions_one</cite>.
 <cite>K_cart_2</cite> is the total number of Cartesian contractions within <cite>contractions_two</cite>.</p>
@@ -1059,17 +1052,15 @@ associated with the second index.</p>
 <cite>K_sph_1</cite> is the total number of spherical contractions within <cite>contractions_one</cite>.
 <cite>K_sph_2</cite> is the total number of spherical contractions within <cite>contractions_two</cite>.</p>
 </dd>
-</dl>
-<p>construct_array_lincomb(self, transform_one, transform_two, coord_type, <a href="#id31"><span class="problematic" id="id32">**</span></a>kwargs) :
-np.ndarray(K_orbs_1, K_orbs_2, …)</p>
-<blockquote>
-<div><p>Return the array associated with linear combinations of contractions in the given coordinate
+<dt>construct_array_lincomb(self, transform_one, transform_two, coord_type, <a href="#id31"><span class="problematic" id="id32">**</span></a>kwargs) :</dt><dd><p><strong>np.ndarray(K_orbs_1, K_orbs_2, …)</strong></p>
+<p>Return the array associated with linear combinations of contractions in the given coordinate
 system.
 <cite>K_orbs_1</cite> is the number of basis functions produced by linear combinations of the
 spherical contractions associated with <cite>contractions_one</cite>.
 <cite>K_orbs_2</cite> is the number of basis functions produced by linear combinations of the
 spherical contractions associated with <cite>contractions_two</cite>.</p>
-</div></blockquote>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="gbasis.base_two_asymm.BaseTwoIndexAsymmetric.construct_array_cartesian">
 <span class="sig-name descname"><span class="pre">construct_array_cartesian</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.base_two_asymm.BaseTwoIndexAsymmetric.construct_array_cartesian" title="Permalink to this definition">#</a></dt>
@@ -1289,14 +1280,11 @@ Dimension 1 corresponds to the Cartesian contraction within <cite>contractions_t
 Property of <cite>BaseTwoIndexSymmetric</cite>.</p>
 </dd>
 </dl>
-<dl class="simple">
+<dl>
 <dt>__init__(self, contractions)</dt><dd><p>Initialize.</p>
 </dd>
-</dl>
-<p>construct_array_contraction(self, contraction, <a href="#id33"><span class="problematic" id="id34">**</span></a>kwargs) :
-np.ndarray(M_1, L_cart_1, M_2, L_cart_2, …)</p>
-<blockquote>
-<div><p>Return the array associated with a <cite>GeneralizedContractionShell</cite> instance.
+<dt>construct_array_contraction(self, contraction, <a href="#id33"><span class="problematic" id="id34">**</span></a>kwargs) :</dt><dd><p><strong>np.ndarray(M_1, L_cart_1, M_2, L_cart_2, …)</strong></p>
+<p>Return the array associated with a <cite>GeneralizedContractionShell</cite> instance.
 <cite>M_1</cite> is the number of segmented contractions with the same exponents (and angular
 momentum) associated with the first index.
 <cite>L_cart_1</cite> is the number of Cartesian contractions for the given angular momentum
@@ -1305,8 +1293,7 @@ associated with the first index.
 momentum) associated with the second index.
 <cite>L_cart_2</cite> is the number of Cartesian contractions for the given angular momentum
 associated with the second index.</p>
-</div></blockquote>
-<dl class="simple">
+</dd>
 <dt>construct_array_cartesian(self, <a href="#id35"><span class="problematic" id="id36">**</span></a>kwargs)<span class="classifier">np.ndarray(K_cart, K_cart, …)</span></dt><dd><p>Return the array associated with Cartesian Gaussians.
 <cite>K_cart</cite> is the total number of Cartesian contractions within the instance.</p>
 </dd>
@@ -1543,11 +1530,9 @@ N_{\phi} (\vec{a}, \vec{R}_A) \sum_i d_{ij} g_i (\vec{r} | \vec{a}, \vec{R}_A)\]
 <dl>
 <dt>coord<span class="classifier">np.ndarray(3,)</span></dt><dd><p>Coordinate of the center of the contractions.</p>
 </dd>
-<dt>angmom<span class="classifier">int</span></dt><dd><p>Angular momentum of the contractions.
-.. math:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">ell</span> <span class="o">=</span> \<span class="n">sum_i</span> <span class="p">(</span>\<span class="n">vec</span><span class="p">{</span><span class="n">a</span><span class="p">})</span><span class="n">_i</span> <span class="o">=</span> <span class="n">a_x</span> <span class="o">+</span> <span class="n">a_y</span> <span class="o">+</span> <span class="n">a_z</span>
-</pre></div>
-</div>
+<dt>angmom<span class="classifier">int</span></dt><dd><p>Angular momentum of the contractions.</p>
+<div class="math notranslate nohighlight">
+\[\ell = \sum_i (\vec{a})_i = a_x + a_y + a_z\]</div>
 </dd>
 <dt>angmom_components_cart<span class="classifier">np.ndarray(L, 3)</span></dt><dd><p>The x, y, and z components of the angular momentum vectors
 (<span class="math notranslate nohighlight">\(\vec{a} = (a_x, a_y, a_z)\)</span> where <span class="math notranslate nohighlight">\(a_x + a_y + a_z = \ell\)</span>).
@@ -1591,11 +1576,8 @@ Property of <cite>GeneralizedContractionShell</cite>.</p>
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">angmom</span></span><a class="headerlink" href="#gbasis.contractions.GeneralizedContractionShell.angmom" title="Permalink to this definition">#</a></dt>
 <dd><p>Angular momentum of the contractions.</p>
 <dl>
-<dt>angmom<span class="classifier">int</span></dt><dd><p>Angular momentum of the set of contractions.
-.. math:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">sum_i</span> <span class="p">(</span>\<span class="n">vec</span><span class="p">{</span><span class="n">a</span><span class="p">})</span><span class="n">_i</span> <span class="o">=</span> <span class="n">a_x</span> <span class="o">+</span> <span class="n">a_y</span> <span class="o">+</span> <span class="n">a_z</span>
-</pre></div>
-</div>
+<dt>angmom<span class="classifier">int</span></dt><dd><p>Angular momentum of the set of contractions.</p>
+<p><span class="math notranslate nohighlight">\(\sum_i (\vec{a})_i = a_x + a_y + a_z\)</span></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1620,11 +1602,12 @@ characters appear. For example, <cite>(2, 1, 1)</cite> corresponds to <cite>XXYZ
 <dt class="sig sig-object py" id="gbasis.contractions.GeneralizedContractionShell.angmom_components_sph">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">angmom_components_sph</span></span><a class="headerlink" href="#gbasis.contractions.GeneralizedContractionShell.angmom_components_sph" title="Permalink to this definition">#</a></dt>
 <dd><p>Return the ordering of the magnetic quantum numbers for the given angular momentum.</p>
-<dl>
-<dt>We define spherical components as regular solid harmonics <span class="math notranslate nohighlight">\(R_{\ell, m}\)</span> such that</dt><dd><div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}R_{\ell, m} = C_{\ell, m}, m = 0 ... \ell\\R_{\ell, -m} = S_{\ell, m}, m = 1 ... \ell\end{aligned}\end{align} \]</div>
-</dd>
-</dl>
+<p>We define spherical components as regular solid harmonics <span class="math notranslate nohighlight">\(R_{\ell, m}\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[\begin{align}
+    R_{\ell, m} &amp;= C_{\ell, m}, \quad &amp;m = 0 ... \ell
+    R_{\ell, -m} &amp;= S_{\ell, m}, \quad &amp;m = 1 ... \ell
+\end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(C_{\ell, m}\)</span> and <span class="math notranslate nohighlight">\(S_{\ell, m}\)</span> are Cosine- and Sine-like real
 regular solid harmonics (respectively).</p>
 <p>We will use these definitions to represent pure (spherical) functions as strings of the form
@@ -1823,9 +1806,9 @@ set has an angular momentum greater than “k”, an error will be raised.</p>
 <span class="sig-prename descclassname"><span class="pre">gbasis.spherical.</span></span><span class="sig-name descname"><span class="pre">expansion_coeff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angmom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.spherical.expansion_coeff" title="Permalink to this definition">#</a></dt>
 <dd><p>Calculate the real solid harmonic expansion coefficient.</p>
 <div class="math notranslate nohighlight">
-\[C^angmom,mag_i,j,k = -1^{i + k - shift_factor} * (1/4)^i * {angmom \choose i}
-* {(angmom - i) \choose (\abs{mag} + i)} * {i \choose j} * {\abs{mag} \choose 2 * k},\]</div>
-<p>where shift_factor = 0 if mag &gt;= 0 and shift_factor = 1/2 if mag &lt; 0.</p>
+\[C^{angmom,mag,i,j,k} = -1^{i + k - \text{shift_factor}} * (1/4)^i * {angmom \choose i}
+* {(angmom - i) \choose (|mag| + i)} * {i \choose j} * {|mag| \choose 2 * k},\]</div>
+<p>where <span class="math notranslate nohighlight">\(shift_factor = 0\)</span> if <span class="math notranslate nohighlight">\(mag &gt;= 0\)</span> and <span class="math notranslate nohighlight">\(shift_factor = 1/2\)</span> if <span class="math notranslate nohighlight">\(mag &lt; 0\)</span>    .</p>
 <dl class="simple">
 <dt>angmom<span class="classifier">int</span></dt><dd><p>The angular momentum of the Gaussian primitive(s).</p>
 </dd>
@@ -1899,12 +1882,9 @@ If <cite>spherical_order</cite> does not contain exactly <span class="math notra
 <dt class="sig sig-object py" id="gbasis.spherical.harmonic_norm">
 <span class="sig-prename descclassname"><span class="pre">gbasis.spherical.</span></span><span class="sig-name descname"><span class="pre">harmonic_norm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angmom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.spherical.harmonic_norm" title="Permalink to this definition">#</a></dt>
 <dd><p>Calculate the normalization constant of a real solid harmonic.</p>
-<blockquote>
-<div><div class="math notranslate nohighlight">
-\[`N^S_angmom,m = 1/(2^abs{m} * angmom!) * sqrt{2 * (angmom + abs{m})!
-* (angmom - abs{m})! / 2^del{0, m})}`,
-where :math: `del{0, m}` is the Kronecker delta of 0 and m.\]</div>
-</div></blockquote>
+<div class="math notranslate nohighlight">
+\[N^S_{angmom,m} = 1/(2^{|m|} * angmom!) * \sqrt{2 * (angmom + |{m}|)! * (angmom - |{m}|)! / 2^{\delta_0^m}},\]</div>
+<p>where :math: <cite>del{0, m}</cite> is the Kronecker delta of 0 and m.</p>
 <dl class="simple">
 <dt>angmom<span class="classifier">int</span></dt><dd><p>The angular momentum of the basis function(s).</p>
 </dd>
@@ -1930,10 +1910,10 @@ If <cite>mag</cite> has a greater magnitude than <cite>angmom</cite>.</p>
 <span class="sig-prename descclassname"><span class="pre">gbasis.spherical.</span></span><span class="sig-name descname"><span class="pre">real_solid_harmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">angmom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#gbasis.spherical.real_solid_harmonic" title="Permalink to this definition">#</a></dt>
 <dd><p>Calculate a real solid harmonic.</p>
 <div class="math notranslate nohighlight">
-\[S_angmom,mag = N^S_angmom,mag \sum_i=0^[(angmom-abs{mag})/2] \sum_j=0^i
-\sum_k=shift_factor^([(abs{mag}-1)/2] + 0.5) C^angmom,m_i,j,k * x^a_x * y^a_y * z^a_z,\]</div>
-<p>where <span class="math notranslate nohighlight">\(a_x = 2t + abs{mag} - 2(u + v)\)</span>, <span class="math notranslate nohighlight">\(a_y = 2(u + v)\)</span>,
-and <span class="math notranslate nohighlight">\(a_z = angmom - 2t - abs{mag}\)</span>.</p>
+\[S_{angmom,mag} = N^{S}_{angmom,mag} \sum_{i=0}^{(angmom-|{mag}|)/2} \sum_{j=0}^i
+\sum_k={shift_factor}^{[(|{mag}|-1)/2] + 0.5} C^{angmom,m_i,j,k} x^a_x y^a_y z^a_z,\]</div>
+<p>where <span class="math notranslate nohighlight">\(a_x = 2t + |mag| - 2(u + v)\)</span>, <span class="math notranslate nohighlight">\(a_y = 2(u + v)\)</span>,
+and <span class="math notranslate nohighlight">\(a_z = angmom - 2t - |mag|\)</span>.</p>
 <dl class="simple">
 <dt>angmom<span class="classifier">int</span></dt><dd><p>The angular momentum of the basis function(s).</p>
 </dd>
@@ -2061,7 +2041,7 @@ at <a class="github reference external" href="https://github.com/theochem/gbasis
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../tutorial.html"
@@ -2089,6 +2069,7 @@ at <a class="github reference external" href="https://github.com/theochem/gbasis
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2128,6 +2109,7 @@ By The QC-Dev Community with the support of Digital Research Alliance of Canada 
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022-2023.
@@ -2154,8 +2136,8 @@ By The QC-Dev Community with the support of Digital Research Alliance of Canada 
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
 
   <footer class="bd-footer">
   </footer>
